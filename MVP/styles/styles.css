@@ -277,11 +277,11 @@ footer{
     display: block;
     text-align: left;
   }
-  .sponsorsGS h2{
-	  font-size:25px
-  }
-  .sBronze h3{
+  .sponsorsGS h3{
 	  font-size:20px
+  }
+  .sBronze h4{
+	  font-size:15px
   }
 }
 
