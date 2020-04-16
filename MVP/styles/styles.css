@@ -182,7 +182,7 @@ article{
 	clear: both;
 }
 
-.sponsorsPlat img, .sGold, .sSilver{
+.sponsorsPlat img{
 	display: inline-block;
     width: 25%;
 	padding: 0;
@@ -192,10 +192,40 @@ article{
 
 }
 
+ .sGold, .sSilver{
+	display: inline-block;
+	align:center; 
+    width: 47%;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	clear:both;
+
+ }
+ 
+ .sGold img{
+	width:40%;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	clear:both;
+ }
+ 
+ .sSilver img{
+	width:33%;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	clear:both;
+ }
+ 
+
 
 .sPlatnium h1{
 	font-size:2vw
 }
+
+
 
 .sBronze{
 	width:100%;
@@ -245,7 +275,7 @@ footer{
     display: block;
     text-align: left;
   }
-  .sponsorsPlat h2{
+  .sponsorsGS h2{
 	  font-size:25px
   }
   .sBronze h3{
