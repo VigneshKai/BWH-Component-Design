@@ -100,12 +100,12 @@ nav img {
 	text-align: center;
 	margin: 0px;
 	padding: 10px;
-}	
+}
 
 .wrapperInfo{
 	display:block;
 	width:100%;
-	clear: both;	
+	clear: both;
 }
 
 .wrapper {
@@ -176,7 +176,7 @@ iframe{
 }
 
 article{
-	
+
 	display:block;
 	width:100%;
 	clear: both;
@@ -194,7 +194,7 @@ article{
 
  .sGold, .sSilver{
 	display: inline-block;
-	align:center; 
+	align:center;
     width: 47%;
 	padding: 0;
 	margin: 0;
@@ -202,7 +202,7 @@ article{
 	clear:both;
 
  }
- 
+
  .sGold img{
 	width:40%;
 	padding: 0;
@@ -210,15 +210,15 @@ article{
 	vertical-align: middle;
 	clear:both;
  }
- 
+
  .sSilver img{
-	width:33%;
+	width:29%;
 	padding: 0;
 	margin: 0;
 	vertical-align: middle;
 	clear:both;
  }
- 
+
 
 
 .sPlatnium h1{
@@ -232,7 +232,7 @@ article{
 }
 
 .sBronze img{
-width:8%;	
+width:8%;
 }
 
 footer{
