@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
 }
+
+/* Body has hidden side to side scrolling and 0 padding/margin to properly fit navbar to 100% width */
 body{
 overflow-x: hidden;
 overflow-y: scroll;
@@ -34,18 +36,16 @@ p{
 	font-size:20px;
 }
 
+/* Nav bar is fixed to follow the user as they scroll through the page for easy access, Z-index is 9999 to prevent nav bar from going behind content */
 nav {
 	position: fixed;
 	background-color:#ffffff;
 	width:100%;
 	display: block;
 	z-index: 9999;
-	margin: 0px;
-	padding: 0px;
-}
-
-#count{
-	font-size:30px;
+	margin: 0;
+	padding: 0;
+	top:-5px
 }
 
 nav a {
@@ -57,18 +57,23 @@ nav a {
   text-decoration: none;
   font-size: 17px;
 }
+
 nav a:hover {
   background-color: #15115E;
   color: white;
 }
+
 nav img {
 	height: 40px;
 	padding: 0;
 	margin: 0;
-
 }
 
+.responsiveNav .icon {
+  display: none;
+}
 
+/* VH is used to get the size of the webpage and make it mobile friendly. The size of the div will be the same as the screen on startup */
 .mainHeading{
  background-image: url('../images/12345.png');
  float: left;
@@ -77,11 +82,6 @@ nav img {
  height:100vh;
  background-size: cover;
  background-position: center;
-
-}
-
-.banner__text {
-    text-align: center;
 }
 
 .countdown{
@@ -94,35 +94,42 @@ nav img {
 	font-size:30px;
 }
 
-iframe{
+
+#count{
+	font-size:30px;
+	text-align: center;
+	margin: 0px;
+	padding: 10px;
+}	
+
+.wrapperInfo{
 	display:block;
-	width:90%;
-	padding:10px;
+	width:100%;
+	clear: both;	
 }
 
-/* Float four columns side by side */
 .wrapper {
   float: left;
   width: 25%;
   padding: 50px 10px;
-
 }
 
-/* Remove extra left and right margins, due to padding */
 .infoCards {
 	padding-left:30px;
-
 }
 
-/* Clear floats after the columns */
+/*iframe is used to style embbeded youtube videos*/
+iframe{
+	display:block;
+	width:100%;
+	padding:10px;
+}
+
 .infoCards:after {
   display: table;
   clear: both;
-
 }
 
-
-/* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -130,7 +137,6 @@ iframe{
   height:500px;
   text-align: center;
   background-color: #f1f1f1;
-
 }
 
 .collapsible {
@@ -144,7 +150,6 @@ iframe{
 	font-size:16px;
 	padding:19px 67px;
 	text-decoration:none;
-
 }
 
 .collapsible:active {
@@ -165,14 +170,53 @@ iframe{
 	color:white;
 	display:none;
 	font-size:15px;
-	text-align:center;
+	text-align:left;
 	float:left;
 	border-radius:5px;
+}
 
+article{
+	
+	display:block;
+	width:100%;
+	clear: both;
+}
+
+.sponsorsPlat img, .sGold, .sSilver{
+	display: inline-block;
+    width: 25%;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	clear:both;
 
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+.sPlatnium h1{
+	font-size:2vw
+}
+
+.sBronze{
+	width:100%;
+}
+
+.sBronze img{
+width:8%;	
+}
+
+footer{
+	padding:20px 0;
+	border-top:4px;
+	color:white;
+	text-align:center;
+	clear:both;
+	width:100%;
+	background:#15115E;
+
+}
+
+/*@media screen is used to make the website more mobile friendly, making the cards fit to size and the nav to hide the a links */
 @media screen and (max-width: 600px) {
    .wrapper {
     width: 100%;
@@ -187,22 +231,9 @@ iframe{
   }
   .platnium {
     display: inline-block;
-}
-
-}
-
-.responsiveNav .icon {
-  display: none;
-}
-
-.count {
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-}
+	}
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
   .responsiveNav.responsive {position: fixed;}
   .responsiveNav.responsive a.icon {
     position: absolute;
@@ -214,19 +245,18 @@ iframe{
     display: block;
     text-align: left;
   }
+  .sponsorsPlat h2{
+	  font-size:25px
+  }
+  .sBronze h3{
+	  font-size:20px
+  }
 }
 
-footer{
-	padding:20px 0;
-	border-top:4px;
-	color:white;
-	text-align:center;
-	clear:both;
-	width:100%;
-	background:#15115E;
 
-}
 
+
+/*Style Guide CSS*/
 .stylepage{
   width: 100%;
   padding: 0 10px;
