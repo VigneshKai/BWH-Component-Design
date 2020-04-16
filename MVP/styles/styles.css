@@ -204,7 +204,7 @@ article{
  }
 
  .sGold img{
-	width:40%;
+	width:30%;
 	padding: 0;
 	margin: 0;
 	vertical-align: middle;
@@ -212,7 +212,7 @@ article{
  }
 
  .sSilver img{
-	width:29%;
+	width:30%;
 	padding: 0;
 	margin: 0;
 	vertical-align: middle;
@@ -229,7 +229,7 @@ article{
 
 .sBronze{
 	width:100%;
-  padding: 0;
+
 }
 
 .sBronze img{
